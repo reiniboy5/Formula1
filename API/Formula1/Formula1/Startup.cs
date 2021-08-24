@@ -1,4 +1,7 @@
 using Formula1.Data;
+using Formula1.Entities;
+using Formula1.Interfaces;
+using Formula1.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +32,8 @@ namespace Formula1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Formula1DbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IAppRepository<Teams>, TeamsRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
