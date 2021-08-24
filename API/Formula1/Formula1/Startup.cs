@@ -35,6 +35,8 @@ namespace Formula1
 
             services.AddScoped<IAppRepository<Teams>, TeamsRepository>();
 
+            services.AddCors();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -53,6 +55,13 @@ namespace Formula1
             }
 
             app.UseHttpsRedirection();
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
 
             app.UseRouting();
 
