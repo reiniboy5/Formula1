@@ -35,18 +35,27 @@ namespace Formula1
 
             services.AddScoped<IAppRepository<Teams>, TeamsRepository>();
 
-            services.AddCors();
-
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Formula1", Version = "v1" });
             });
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // global cors policy
+            app.UseCors(options => options.WithOrigins("http://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+                //.AllowAnyMethod()
+                //.AllowAnyHeader()
+                //.SetIsOriginAllowed(origin => true) // allow any origin
+                //.AllowCredentials()); // allow credentials
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,12 +65,6 @@ namespace Formula1
 
             app.UseHttpsRedirection();
 
-            // global cors policy
-            app.UseCors(x => x
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .SetIsOriginAllowed(origin => true) // allow any origin
-                .AllowCredentials()); // allow credentials
 
             app.UseRouting();
 

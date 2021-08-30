@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\2021 Coding\\MyProjects\\Formula1\\Formula1\\Formula1.csproj": {}
+    "C:\\2021 Coding\\GitHub\\Formula1\\API\\Formula1\\Formula1\\Formula1.csproj": {}
   },
   "projects": {
-    "C:\\2021 Coding\\MyProjects\\Formula1\\Formula1\\Formula1.csproj": {
+    "C:\\2021 Coding\\GitHub\\Formula1\\API\\Formula1\\Formula1\\Formula1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2021 Coding\\MyProjects\\Formula1\\Formula1\\Formula1.csproj",
+        "projectUniqueName": "C:\\2021 Coding\\GitHub\\Formula1\\API\\Formula1\\Formula1\\Formula1.csproj",
         "projectName": "Formula1",
-        "projectPath": "C:\\2021 Coding\\MyProjects\\Formula1\\Formula1\\Formula1.csproj",
+        "projectPath": "C:\\2021 Coding\\GitHub\\Formula1\\API\\Formula1\\Formula1\\Formula1.csproj",
         "packagesPath": "C:\\Users\\Reinhardt Smit\\.nuget\\packages\\",
-        "outputPath": "C:\\2021 Coding\\MyProjects\\Formula1\\Formula1\\obj\\",
+        "outputPath": "C:\\2021 Coding\\GitHub\\Formula1\\API\\Formula1\\Formula1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Reinhardt Smit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,24 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
