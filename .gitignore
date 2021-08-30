@@ -1,3 +1,4 @@
 
 *.cache
 API/Formula1/Formula1/obj/Debug/net5.0/Formula1.csproj.AssemblyReference.cache
+*.pdb

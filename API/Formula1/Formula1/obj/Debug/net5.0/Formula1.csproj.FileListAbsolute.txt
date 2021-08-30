@@ -59,3 +59,8 @@ C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\obj\Debug\net5.0\Formula1.d
 C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\obj\Debug\net5.0\ref\Formula1.dll
 C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\obj\Debug\net5.0\Formula1.pdb
 C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\obj\Debug\net5.0\Formula1.genruntimeconfig.cache
+C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\bin\Debug\net5.0\System.Web.Cors.dll
+C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\bin\Debug\net5.0\System.Web.Http.dll
+C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\bin\Debug\net5.0\System.Web.Http.Cors.dll
+C:\2021 Coding\GitHub\Formula1\API\Formula1\Formula1\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

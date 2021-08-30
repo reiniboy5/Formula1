@@ -40,9 +40,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Cors": {
+            "Microsoft.AspNet.WebApi.Cors": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.2.7, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
