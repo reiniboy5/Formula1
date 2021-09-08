@@ -1,5 +1,6 @@
 ﻿using Formula1.Entities;
 using Formula1.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
