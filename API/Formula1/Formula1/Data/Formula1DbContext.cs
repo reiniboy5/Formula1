@@ -15,5 +15,6 @@ namespace Formula1.Data
         }
 
         public DbSet<Teams> Teams { get; set; }
+        public DbSet<Drivers> Drivers { get; set; }
     }
 }

@@ -34,6 +34,7 @@ namespace Formula1
             services.AddDbContext<Formula1DbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IAppRepository<Teams>, TeamsRepository>();
+            services.AddScoped<IAppRepository<Drivers>, DriversRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

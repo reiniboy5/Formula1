@@ -3,14 +3,16 @@ using Formula1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Formula1.Migrations
 {
     [DbContext(typeof(Formula1DbContext))]
-    partial class Formula1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20210908162929_DriversMigration")]
+    partial class DriversMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
