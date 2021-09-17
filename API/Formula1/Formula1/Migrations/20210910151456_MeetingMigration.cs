@@ -13,8 +13,7 @@ namespace Formula1.Migrations
                 {
                     MeetingID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DateOfMeeting = table.Column<DateTime>(type: "date", nullable: false),
-                    TimeOfMeeting = table.Column<byte[]>(type: "timestamp", nullable: false)
+                    DateOfMeeting = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

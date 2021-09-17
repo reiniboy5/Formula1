@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Formula1.Migrations
 {
     [DbContext(typeof(Formula1DbContext))]
-    [Migration("20210909132245_MeetingMigration")]
+    [Migration("20210910151456_MeetingMigration")]
     partial class MeetingMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,11 +53,7 @@ namespace Formula1.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateOfMeeting")
-                        .HasColumnType("date");
-
-                    b.Property<byte[]>("TimeOfMeeting")
-                        .IsRequired()
-                        .HasColumnType("timestamp");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("MeetingID");
 

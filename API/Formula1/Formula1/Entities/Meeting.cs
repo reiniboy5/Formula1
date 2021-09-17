@@ -11,10 +11,6 @@ namespace Formula1.Entities
     {
         [Key]
         public int MeetingID { get; set; }
-        [Column(TypeName = "date")]
         public DateTime DateOfMeeting { get; set; }
-
-        [Column(TypeName = "timestamp")]
-        public DateTime TimeOfMeeting { get; set; }
     }
 }

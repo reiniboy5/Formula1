@@ -35,6 +35,7 @@ namespace Formula1
 
             services.AddScoped<IAppRepository<Teams>, TeamsRepository>();
             services.AddScoped<IAppRepository<Drivers>, DriversRepository>();
+            services.AddScoped<IAppRepository<Meeting>, MeetingRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

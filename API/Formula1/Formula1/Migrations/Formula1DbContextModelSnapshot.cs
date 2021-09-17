@@ -51,11 +51,7 @@ namespace Formula1.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateOfMeeting")
-                        .HasColumnType("date");
-
-                    b.Property<byte[]>("TimeOfMeeting")
-                        .IsRequired()
-                        .HasColumnType("timestamp");
+                        .HasColumnType("datetime2");
 
                     b.HasKey("MeetingID");
 
